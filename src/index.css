@@ -8,7 +8,7 @@
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     --background: #FFFFFF;
-    --background-alt: #F5F5F5;
+    --background-alt: #F6F6F6;
     --border: #DDDDDD;
     --text-title: #303030;
     --text-paragraph: #505050;
@@ -63,11 +63,12 @@ code {
 
 .main-section {
     padding: var(--spacing) var(--spacing-large);
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .main-section-title {
     padding-bottom: var(--spacing-small);
-    margin-bottom: var(--spacing);
     border-bottom: 1px solid var(--border);
 }
 
@@ -100,6 +101,10 @@ code {
 
 .block {
     display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {

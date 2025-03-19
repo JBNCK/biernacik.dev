@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import isGerman from './isGerman';
+import PageHeaderWithBack from './PageHeader/PageHeaderWithBack';
 
 function Privacy() {
 
@@ -15,7 +16,7 @@ function Privacy() {
     const privacyPolicy = navigator.language === "de-DE" ? (
         <>
             <div className="main-section">
-                <h1 className='main-section-title'>{pageTitle}</h1>
+            
                 <p>Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als "Daten" bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie z. B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als "Onlineangebot").</p>
                 <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
                 <p><a className='bold'>Stand:</a> 17. März 2025</p>
@@ -346,6 +347,7 @@ function Privacy() {
 
     return (
         <div id="page">
+            <PageHeaderWithBack pageTitle={pageTitle} />
             {privacyPolicy}
         </div>
     );

@@ -1,5 +1,7 @@
 import isGerman from "./isGerman";
 import { useEffect } from "react";
+import PageHeader from "./PageHeader/PageHeader";
+import GitHubCalendar from "./GitHubCalendar/GitHubCalendar";
 
 function App() {
   useEffect(() => {
@@ -10,13 +12,22 @@ function App() {
     }, 1);
   });
 
-  const pageTitle = "biernacik.dev";
-  const pageDesc = isGerman() ? "Diese website befindet sich noch im Aufbau" : "This website is still under construction";
+  const pageContent = isGerman() ? {
+    pageTitle: "biernacik.dev",
+    pageDesc: "Diese Seite befindet sich noch im Aufbau. Bitte besuchen Sie stattdessen mein GitHub-Profil."
+  } : {
+    pageTitle: "biernacik.dev",
+    pageDesc: "This website is currently under construction. Please visit my GitHub profile in the meantime."
+  }
+
   return (
     <div id="page">
+      <PageHeader pageTitle={pageContent.pageTitle} />
       <div className="main-section">
-      <h1>{pageTitle}</h1>
-      <p>{pageDesc}</p>
+        <GitHubCalendar />
+      </div>
+      <div className="main-section">
+        <p>{pageContent.pageDesc}</p>
       </div>
     </div>
   )

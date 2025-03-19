@@ -4,6 +4,12 @@
     max-width: fit-content;
     font-weight: 700;
     color: var(--text-highlight);
+    transition: all .25s;
+}
+
+.footer-link:hover {
+    padding-left: 4px;
+    border-left: 2px solid var(--link);
 }
 
 #footer {

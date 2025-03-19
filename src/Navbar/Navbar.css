@@ -34,25 +34,38 @@
 }
 
 #menu {
-    display: none;
+    transition: all .25s;
     position: fixed;
+    top: -40px;
     left: 0;
-    top: 81px;
     width: 100%;
     background: var(--background);
     border-bottom: 1px solid var(--border);
     padding: var(--spacing);
+    z-index: 998;
+}
+
+#menu-back {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0 !important;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
 }
 
 .menu-link {
     display: block;
     margin: 4px 0;
-    font-weight: 700;
-    color: var(--text-title);
+    width: fit-content;
+    transition: all .25s;
 }
 
 .menu-link:hover {
     text-decoration: underline;
+    font-weight: 700;
+    color: var(--text-title);
 }
 
 .social-link {
