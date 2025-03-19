@@ -1,0 +1,89 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background);
+    box-shadow: 0 0 10px 5px var(--background-alt);
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+}
+
+#navbar-left {
+    margin-left: var(--spacing);
+}
+
+#navbar-left a, #navbar-left .bi {
+    margin-right: var(--spacing-small);
+}
+
+#navbar-right {
+    margin-right: var(--spacing);
+}
+
+#navbar-right a, #navbar-right .bi {
+    margin-left: var(--spacing-small);
+}
+
+.bi {
+    font-size: x-large;
+    transition: all .25s;
+}
+
+.bi-list {
+    display: none;
+}
+
+.bi-list:hover {
+    cursor: pointer;
+}
+
+.bi:hover {
+    color: var(--title)
+}
+
+#menu {
+    position: fixed;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    background: var(--background);
+    padding: var(--spacing);
+    border-bottom: 1px solid var(--border);
+    transition: all .25s;
+}
+
+#menu-darkener {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: var(--background-transparent);
+    z-index: 997;
+}
+
+@media screen and (min-width: 801px) {
+    #menu {
+        display: none;
+    }
+    
+    #menu-darkener {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bi-list {
+        display: block;
+    }
+
+    #navbar-left a {
+        display: none;
+    }
+}
