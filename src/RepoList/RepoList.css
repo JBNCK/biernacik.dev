@@ -1,0 +1,21 @@
+.repo-item {
+    padding: var(--spacing);
+    background: var(--background);
+    border: solid 1px var(--border);
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: var(--spacing-small) 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all .25s;
+    box-shadow: 0 0 10px 10px var(--background-alt);
+}
+
+.repo-item:hover {
+    background: var(--background-alt);
+}
+
+.repo-item p {
+    margin: 0;
+}
