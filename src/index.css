@@ -13,6 +13,7 @@
     --text-title: #303030;
     --text-paragraph: #505050;
     --text-highlight: #303030;
+    --link: #2080FF;
     --spacing: 20px;
     --spacing-small: 10px;
     --spacing-large: 40px;
@@ -54,12 +55,14 @@ code {
     -webkit-user-select: text;
 }
 
-.page {
+#page {
   margin-top: 80px;
+  transition: all .25s;
+  opacity: 0;
 }
 
 .main-section {
-    padding: var(--spacing-large);
+    padding: var(--spacing) var(--spacing-large);
 }
 
 .main-section-title {
@@ -82,18 +85,17 @@ code {
 }
 
 .bold {
-    color: var(--text-highlight);
     font-weight: 700;
+    color: var(--text-highlight);
 }
 
 .link {
-    color: var(--text-highlight);
-    transition: all .25s;
+    color: var(--link);
     width: fit-content;
 }
 
 .link:hover {
-    color: var(--text-paragraph);
+    text-decoration: underline;
 }
 
 .block {

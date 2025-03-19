@@ -1,0 +1,11 @@
+.footer-link {
+    margin: 0;
+    padding: 0;
+    max-width: fit-content;
+    font-weight: 700;
+    color: var(--text-highlight);
+}
+
+#footer {
+    margin-bottom: var(--spacing-large);
+}
