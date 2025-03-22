@@ -1,16 +1,16 @@
 .gh-component-wrapper {
     padding-top: 4px;
-    max-width: 800px;
     width: 100%;
-    margin: var(--spacing) auto;
+    margin: var(--spacing-small) auto;
 }
 
 .gh-graph-wrapper {
-    width: 100%;
     text-align: center;
     overflow-x: auto;
 }
 
 .gh-graph {
+    min-width: 800px;
+    max-width: 800px;
     width: 100%;
 }
