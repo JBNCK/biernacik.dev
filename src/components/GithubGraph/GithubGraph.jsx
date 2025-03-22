@@ -11,9 +11,9 @@ function GithubGraph() {
     return (
         <div className='gh-component-wrapper'>
             <div className='gh-graph-wrapper'>
-                <img className='gh-graph' src="http://ghchart.rshah.org/JBNCK" alt="My Github chart" />
+                <img className='gh-graph' src="http://ghchart.rshah.org/janjbnck" alt="My Github chart" />
             </div>
-            <a className='link' href='https://github.com/JBNCK'>{componentContent.ghLink} <i className="bi bi-arrow-up-right-circle-fill"></i></a>
+            <a className='link' href='https://github.com/janjbnck'>{componentContent.ghLink} <i className="bi bi-arrow-up-right-circle-fill"></i></a>
         </div>
     )
 }

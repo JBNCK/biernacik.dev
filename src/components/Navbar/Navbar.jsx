@@ -38,7 +38,7 @@ function Navbar() {
                     <Link to="/projects">{componentContent.projectLinkText}</Link>
                 </div>
                 <div id='navbar-right'>
-                    <a href='https://github.com/JBNCK'><i className="bi bi-github"></i></a>
+                    <a href='https://github.com/janjbnck'><i className="bi bi-github"></i></a>
                 </div>
             </div>
             <div id='menu'>

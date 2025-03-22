@@ -10,7 +10,7 @@ function Footer() {
 
     return (
         <div id="footer">
-            <a className="link" href="https://github.com/JBNCK/biernacik.dev">{componentContent.sourceLinkText}</a>
+            <a className="link" href="https://github.com/janjbnck/biernacik.dev">{componentContent.sourceLinkText}</a>
         </div>
     )
 }
