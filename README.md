@@ -1,2 +1,2 @@
 # biernacik.dev
-The biernacik.dev website written in Vite + React.
+This is the GitHub repository of the biernacik.dev website written in Vite + React.
